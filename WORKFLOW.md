@@ -5,13 +5,12 @@
 The final `calculateLateFee` function is:
 
 function calculateLateFee(daysLate, ratePerDay) {
-  if (daysLate <= 1) {
-    return 0;
-  }
-
-  return Math.min(Math.max(Math.round(daysLate * ratePerDay), 1), 20);
+if (daysLate <= 1) {
+return 0;
 }
 
+return Math.min(Math.max(Math.round(daysLate \* ratePerDay), 1), 20);
+}
 
 The final behavior combines the changes from the different contributors:
 
@@ -42,11 +41,39 @@ A useful process change would be to fetch the remote branch before starting work
 
 For example, before making changes, a contributor could run:
 
-
 git fetch origin
 git status
-
 
 and make sure their local branch is based on the current remote branch.
 
 If everyone regularly synchronized their local branches before starting new work, the contributors would be less likely to make commits from stale branch histories. This would reduce the non-fast-forward push rejections that occurred during the exercise.
+
+## Screenshot Evidence
+
+### Task 1
+
+![Task 1 screenshot](screenshots/task-1.jpg)
+
+### Task 2
+
+![Task 2 screenshot](screenshots/task-2.jpg)
+
+### Task 3
+
+![Task 3 screenshot](screenshots/task-3.jpg)
+
+### Task 4
+
+![Task 4 screenshot](screenshots/task-4.jpg)
+
+### Task 5
+
+![Task 5 screenshot](screenshots/task-5.jpg)
+
+### Task 6
+
+![Task 6 screenshot](screenshots/task-6.jpg)
+
+### Task 7
+
+![Task 7 screenshot](screenshots/task-7.jpg)
